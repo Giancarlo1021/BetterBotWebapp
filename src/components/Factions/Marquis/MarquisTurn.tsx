@@ -1,7 +1,6 @@
 /* MarquisTurn.tsx */
 
 import React from "react";
-import tokenSack from "../../../images/token-item-sack.png";
 import { useLocation } from "react-router-dom";
 import BotTurnPage, { ItemPageProps } from "../../BotTurnPage";
 import "../../../index.css";
@@ -10,6 +9,7 @@ import "../../../turn.css";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../redux/redux store/store";
 import TokenImages from "../../TokenImages";
+import BuildingImages from "./MarquisBuildings";
 
 interface MarquisTurnProps extends ItemPageProps {}
 
@@ -136,11 +136,7 @@ const MarquisTurn: React.FC<MarquisTurnProps> = (props) => {
 
             <TokenImages />
 
-            <div className="card-container">
-              <div className="card">
-                <div className="card-body">{/* Card 5 */}</div>
-              </div>
-            </div>
+            <BuildingImages />
 
             <div className="card-container">
               <div className="card">

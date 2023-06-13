@@ -34,7 +34,7 @@ const TokenImages: React.FC = () => {
           <label>
             <h4 className="title">Items</h4>
           </label>
-          <div className="images-container">
+          <div className="token-images-container">
             <TokenImage src={tokenSack} alt="Token Sack" />
             <TokenImage src={tokenSack} alt="Token Sack" />
             <TokenImage src={tokenBoot} alt="Token Boot" />

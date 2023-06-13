@@ -36,14 +36,25 @@ body {
     justify-content: start; /* This will align items to the start of the container */
 }
 
-.images-container {
+.token-images-container {
     display: flex;
     gap: 10px; /* adjust as needed */
+  }
+
+  .building-images-container {
+    display: flex;
+    gap: 10px; /* adjust as needed */
+    margin-bottom: 5px;
   }
   
   .token-images {
       width: 65px; 
       height: 65px;
+      cursor: grab;
+  }
+
+  .transparent {
+    opacity: 0.5;
   }
 
   .grayscale {
