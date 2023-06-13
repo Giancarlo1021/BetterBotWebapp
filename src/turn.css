@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Luminari';
+    src: url('/public/fonts/Luminari-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Luminari', fallback-fonts;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #E6E6FA;
+}
+
+.paragraph {
+    font-size: 15px;
+    line-height: 1.2;
+    color: #000000ab;
+}
+
+.paragraph-title {
+    font-size: 15px;
+    line-height: 1.2;
+    color: #000000c9;
+    font-weight: bold;
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.card-body-tokens {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* This will align items to the start of the container */
+}
+
+.images-container {
+    display: flex;
+    gap: 10px; /* adjust as needed */
+  }
+  
+  .token-images {
+      width: 65px; 
+      height: 65px;
+  }
+
+  .grayscale {
+    filter: grayscale(100%);
+    opacity: 0.5;
+  }
+  

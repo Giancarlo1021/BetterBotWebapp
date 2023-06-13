@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Luminari';
+  src: url('/public/fonts/Luminari-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Luminari', fallback-fonts;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E6E6FA;
+}
+
+.todo-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #E6E6FA;
+  overflow: visible;
+  z-index: 1; /* Add a higher z-index value */
+}
+
+.app-header {
+  background-color: #E6E6FA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 25px 0px;
+  border-bottom: 1px solid rgb(203, 203, 203);
+  z-index: 2;
+  position: relative;
+}
+
+.app-title {
+  flex: 1;
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 1.2; /* Adjust line-height to reduce the gap. */
+}
+
+.header-icons svg {
+  width: 25px;
+  height: 25px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center; /* This should vertically center the icons */
+  justify-content: flex-end; /* This will align the items to the right */
+  gap: 16px;
+  padding-bottom: 10px;
+}
+
+.clear-button {
+  border: none !important;
+  background-color: transparent !important;
+  color: inherit !important;
+  box-shadow: none !important;
+}
+
+.dropdown,
+.dropdown-toggle {
+  outline: none !important;
+  border: none !important;
+  z-index: 1000 !important;
+}
+
+.dropdown:active,
+.dropdown:focus,
+.dropdown-toggle:active,
+.dropdown-toggle:focus {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: inherit !important;
+  z-index: 1000 !important;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+.clear-button:hover,
+.clear-button:focus,
+.clear-button:active,
+.clear-button:focus-within,
+.clear-button:focus-visible {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: inherit !important;
+}
+
+.plus-icon {
+  font-size: 1.4em;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+  z-index: 1000 !important;
+}
+
+.menu {
+  background-color: #E6E6FA;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.488);
+  z-index: 999; /* Add a higher z-index value */
+}
+
+.menu .dropdown-item {
+  background-color: transparent;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  margin: 2px;
+  position: relative;
+  z-index: 999; /* Add a higher z-index value */
+}
+.menu .dropdown-item:hover,
+.menu .dropdown-item:focus {
+  z-index: 1000 !important;
+  border-style: dotted;
+  border-width: 2px;
+  border-color: rgb(0, 0, 0) !important;
+}
+
+.refresh-icon {
+  font-size: 1.3em;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
